@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="quizheader" style="display:flex; justify-content:space-between;">
+            <div class="highscore">
+                <h3 id="highscore">View high scores</h3>
+            </div>
+            <div class="time1">
+                <p id="timer"> time:</p>
+                <p id="timeCount"></p>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="contentContainer"></div>
+    <div class="questionName">
+        <h1 id="questionName">Coding Quiz Challenge</h1>
+    </div>
+    <div class="description">
+        <h5 id="description">Try to anser the following code-related questions within the time limit. <br>
+            Keep in mind that incorrect ansers will penalize your score/time <br>
+            by ten seconds!</h5>
+    </div>
+    <div id="initialInsert" data-view="hidden">
+        <form>
+            <label for="initials">Enter initials: </label>
+            <input type="text" id="initials" />
+            <button id="submit" type="button">submit</button>
+
+        
+    </form>
+    </div>
+    <div>
+        <ol id="highScoreList" data-view="hidden"></ol>
+    </div>
+    <div id="highScoresBtn" data-view="hidden">
+        <button id="goBack" type="button">Go back</button>
+        <button id="clearHighScores" type="button">Clear High scores</button>        
+    </div>
+    <div class="answerBtns" data-view="hidden">
+        <button id="answer1" type="button"></button>
+        <button id="answer2" type="button"></button>
+        <button id="answer3" type="button"></button>
+        <button id="answer4" type="button"></button>
+
+    </div>
+    <div class="quiz">
+        <button id="start" type="button" data-view="visible">Start Quiz</button>
+    </div>
+
+    <hr id="break"></hr>
+    <div class="questionResponse" data-answer="correct"></div>
+    <p id="questionResponse"></p>
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
